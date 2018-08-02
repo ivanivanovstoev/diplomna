@@ -1,0 +1,3 @@
+*.o
+/LoRaGateway/Release/*
+*/Release/*
