@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -std=c++11 -g    CMakeFiles/protocol.dir/main.cpp.o CMakeFiles/protocol.dir/protocol_parser.cpp.o CMakeFiles/protocol.dir/serial_port.cpp.o CMakeFiles/protocol.dir/utils.cpp.o CMakeFiles/protocol.dir/crc32.cpp.o  -o protocol -rdynamic -lboost_system -lboost_filesystem -lboost_thread -lpthread 

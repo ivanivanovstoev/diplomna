@@ -1,0 +1,1 @@
+/media/tuba/Second/physics/diplomna/protocol/build/CMakeFiles/protocol.dir

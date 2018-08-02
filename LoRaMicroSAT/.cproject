@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="io.sloeber.core.toolChain.release.1655407495">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="io.sloeber.core.toolChain.release.1655407495" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="io.sloeber.core.toolChain.release.1655407495" name="Release" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="io.sloeber.core.toolChain.release.1655407495.1984824531" name="/" resourcePath="">
+						<toolChain id="io.sloeber.core.toolChain.release.576239081" name="Arduino Toolchain (Sloeber edition)" superClass="io.sloeber.core.toolChain.release">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="io.sloeber.targetplatform.1828922633" name="Arduino Target" osList="all" superClass="io.sloeber.targetplatform"/>
+							<builder buildPath="${workspace_loc:/gps_test}/Release" id="io.sloeber.sketch.builder.1873052691" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Arduino sketch builder" superClass="io.sloeber.sketch.builder"/>
+							<tool id="io.sloeber.tool.sketch.compiler.cpp.555990990" name="Arduino C++ Compiler" superClass="io.sloeber.tool.sketch.compiler.cpp">
+								<option id="io.sloeber.compiler.cpp.sketch.option.incpath.1352282082" name="Include Paths (-I)" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/core/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Adafruit_9DOF-master}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Adafruit_L3GD20_U-master}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Adafruit_LSM303DLHC-master}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Adafruit_Sensor-master}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/LoRa}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/LoRa/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/SPI}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/SPI/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Wire}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Wire/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Tasker}&quot;"/>
+								</option>
+								<inputType id="io.sloeber.compiler.cpp.sketch.input.127270243" name="CPP source files" superClass="io.sloeber.compiler.cpp.sketch.input"/>
+							</tool>
+							<tool id="io.sloeber.tool.compiler.c.819782465" name="Arduino C Compiler" superClass="io.sloeber.tool.compiler.c">
+								<option id="io.sloeber.compiler.c.sketch.option.incpath.1424299389" name="Include Paths (-I)" superClass="io.sloeber.compiler.c.sketch.option.incpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/core/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Adafruit_9DOF-master}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Adafruit_L3GD20_U-master}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Adafruit_LSM303DLHC-master}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Adafruit_Sensor-master}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/LoRa}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/LoRa/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/SPI}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/SPI/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Wire}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Wire/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Tasker}&quot;"/>
+								</option>
+								<inputType id="io.sloeber.compiler.c.sketch.input.1033901382" name="C Source Files" superClass="io.sloeber.compiler.c.sketch.input"/>
+							</tool>
+							<tool id="io.sloeber.tool.sketch.compiler.s.226975" name="Arduino Assembler" superClass="io.sloeber.tool.sketch.compiler.s">
+								<option id="io.sloeber.compiler.asm.sketch.option.incpath.1682203431" name="Include Paths (-I)" superClass="io.sloeber.compiler.asm.sketch.option.incpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/core/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Adafruit_9DOF-master}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Adafruit_L3GD20_U-master}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Adafruit_LSM303DLHC-master}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Adafruit_Sensor-master}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/LoRa}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/LoRa/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/SPI}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/SPI/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Wire}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Wire/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoRaMicroSAT/libraries/Tasker}&quot;"/>
+								</option>
+								<inputType id="io.sloeber.compiler.S.sketch.input.1688024064" name="Assembly source files" superClass="io.sloeber.compiler.S.sketch.input"/>
+							</tool>
+							<tool id="io.sloeber.tool.ar.479512081" name="Arduino archiver" superClass="io.sloeber.tool.ar"/>
+							<tool id="io.sloeber.tool.combine.992740099" name="Arduino combiner" superClass="io.sloeber.tool.combine"/>
+							<tool id="io.sloeber.tool.objcopy.eep.612780993" name="Arduino tool Create eeprom" superClass="io.sloeber.tool.objcopy.eep"/>
+							<tool id="io.sloeber.tool.size.25206303" name="Arduino tool Print Size" superClass="io.sloeber.tool.size"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="libraries/Adafruit_LSM303DLHC-master/.github|libraries/Adafruit_L3GD20_U-master/.github|libraries/Adafruit_9DOF-master/ahrs|libraries/Adafruit_9DOF-master/pitchrollheading|libraries/?*/**/test*/**|libraries/?*/**/third-party/**|libraries/?*/utility/*/*|libraries/?*/**/?xamples/**|libraries/?*/**/?xtras/**|libraries/**/._*" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="gps_test.null.1999517143" name="gps_test"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope"/>
+</cproject>
