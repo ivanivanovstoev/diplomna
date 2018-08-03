@@ -1,17 +1,45 @@
 /*
-  This is LoRa Serial Gateway
-  Data received from LoRa interface is forwarded to the USB interface and vice versa.
-  Information of received packets is write on the in-build OLED display.
+ * This is LoRa Serial Gateway
+ * Data received from LoRa interface is forwarded to the USB interface and vice versa.
+ * Information of received packets is write on the in-build OLED display.
+ * 
+ * The on-board OLED display is SSD1306 driver and I2C interface. In order to make the
+ * OLED correctly operation, you should output a high-low-high(1-0-1) signal by soft-
+ * ware to OLED's reset pin, the low-level signal at least 5ms.
+ * 
+ * OLED pins to ESP32 GPIOs via this connecthin:
+ * OLED_SDA -- GPIO4
+ * OLED_SCL -- GPIO15
+ * OLED_RST -- GPIO16
+ * 
+ * Copyright (C) 2018  Ivan Stoev
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+ */
 
-  The on-board OLED display is SSD1306 driver and I2C interface. In order to make the
-  OLED correctly operation, you should output a high-low-high(1-0-1) signal by soft-
-  ware to OLED's reset pin, the low-level signal at least 5ms.
-
-  OLED pins to ESP32 GPIOs via this connecthin:
-  OLED_SDA -- GPIO4
-  OLED_SCL -- GPIO15
-  OLED_RST -- GPIO16
-*/
 #include <SPI.h>
 #include <LoRa.h>
 #include <Wire.h>
